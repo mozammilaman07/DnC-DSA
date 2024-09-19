@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-void mergeSort()
+void mergeSort(int arr[], int size)
 {
 }
 
