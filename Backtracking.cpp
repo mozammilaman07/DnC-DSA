@@ -5,4 +5,6 @@ int main()
 {
     string str = "abc";
     int index = 0;
+
+    printStr(str, index);
 }
