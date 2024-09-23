@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-void printPermutation(string str, int index)
+void printPermutation(string &str, int index)
 {
     // base case
     if (index >= str.length())
@@ -15,6 +15,8 @@ void printPermutation(string str, int index)
         swap(str[index], str[j]);
 
         printPermutation(str, index + 1);
+        // Backtracking
+        swap(str[index], str[j]);
     }
 }
 
