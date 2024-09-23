@@ -3,6 +3,12 @@ using namespace std;
 
 void printPermutation(string str, int index)
 {
+    // base case
+    if (index >= str.length())
+    {
+        cout << str << " ";
+        return;
+    }
 }
 
 int main()
