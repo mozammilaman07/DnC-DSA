@@ -9,6 +9,13 @@ void printPermutation(string str, int index)
         cout << str << " ";
         return;
     }
+
+    for (int j = index; j < str.length(); j++)
+    {
+        swap(str[index], str[j]);
+
+        printPermutation(str, index + 1);
+    }
 }
 
 int main()
